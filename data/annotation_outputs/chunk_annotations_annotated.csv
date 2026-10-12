@@ -1,0 +1,268 @@
+query_id,query,chunk_text,chunk_label,start_char,end_char,annotator,review_status,notes
+412,0-3 months boy sleepers without feet,0-3 months,ATTRIBUTE,0,10,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+412,0-3 months boy sleepers without feet,boy,CONTEXT,11,14,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+412,0-3 months boy sleepers without feet,sleepers,PRODUCT,15,23,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+412,0-3 months boy sleepers without feet,without feet,CONSTRAINT,24,36,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+649,1 3/4 inch tooled belt strap without belt buckle,1 3/4 inch,ATTRIBUTE,0,10,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+649,1 3/4 inch tooled belt strap without belt buckle,tooled,ATTRIBUTE,11,17,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+649,1 3/4 inch tooled belt strap without belt buckle,belt strap,PRODUCT,18,28,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+649,1 3/4 inch tooled belt strap without belt buckle,without belt buckle,CONSTRAINT,29,48,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+752,1 hole kitchen faucet without sprayer,1 hole,ATTRIBUTE,0,6,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+752,1 hole kitchen faucet without sprayer,kitchen faucet,PRODUCT,7,21,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+752,1 hole kitchen faucet without sprayer,without sprayer,CONSTRAINT,22,37,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+2013,12x16 shed plans with garage door,12x16,ATTRIBUTE,0,5,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+2013,12x16 shed plans with garage door,shed plans,PRODUCT,6,16,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+2013,12x16 shed plans with garage door,garage door,ATTRIBUTE,22,33,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+2898,21 cupcake toppers,cupcake toppers,PRODUCT,3,18,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5136,7/8 o2 sensor wrench,07-Aug,ATTRIBUTE,0,3,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5136,7/8 o2 sensor wrench,o2 sensor,PURPOSE,4,13,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5136,7/8 o2 sensor wrench,wrench,PRODUCT,14,20,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",timeless,ATTRIBUTE,17,25,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",go with any outfit,ATTRIBUTE,39,57,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",not a thin fabric but not thick either,CONSTRAINT,59,97,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",get warm easily,CONTEXT,108,123,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+7490,airpod case gucci,airpod case,PRODUCT,0,11,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+7490,airpod case gucci,gucci,ATTRIBUTE,12,17,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+7576,airpods pro case without keychain,airpods pro case,PRODUCT,0,16,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+7576,airpods pro case without keychain,without keychain,CONSTRAINT,17,33,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+9737,apple iphone xr disney case,apple iphone xr,PRODUCT,0,15,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+9737,apple iphone xr disney case,disney,ATTRIBUTE,16,22,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+9737,apple iphone xr disney case,case,PRODUCT,23,27,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+10039,aquarium lid,aquarium lid,PRODUCT,0,12,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+10997,atomic habits,atomic habits,PRODUCT,0,13,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+11585,b brand face mask,b brand face mask,PRODUCT,0,17,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+12041,baby knobby ball,baby knobby ball,PRODUCT,0,16,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+12559,badgley mischka shoes,badgley mischka shoes,PRODUCT,0,21,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+13079,bar q grill charcoal,bar q grill charcoal,PRODUCT,0,20,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+13675,bathing suit surong women,bathing suit surong,PRODUCT,0,19,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+13675,bathing suit surong women,women,CONTEXT,20,25,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+16695,black out curtains,black,ATTRIBUTE,0,5,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+16695,black out curtains,out curtains,PRODUCT,6,18,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+18009,boho decor,boho decor,PRODUCT,0,10,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+18040,boho wall decor,boho wall decor,PRODUCT,0,15,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+18043,bohosteering wheel cover,bohosteering,PRODUCT,0,12,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+18043,bohosteering wheel cover,heel,ATTRIBUTE,14,18,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+18043,bohosteering wheel cover,cover,PRODUCT,19,24,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+20435,building writers learning without tears,building writers learning,PRODUCT,0,25,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+20435,building writers learning without tears,without,CONSTRAINT,26,33,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+20435,building writers learning without tears,tears,PRODUCT,34,39,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+21010,c.c bun beanies for women,c,PRODUCT,0,1,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+21010,c.c bun beanies for women,c bun beanies,PRODUCT,2,15,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+21010,c.c bun beanies for women,for women,CONTEXT,16,25,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+21510,calcutta d,calcutta d,PRODUCT,0,10,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+22186,camping sleeping pad,camping sleeping pad,PRODUCT,0,20,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+22832,car seat organizer front seat,car seat organizer,PRODUCT,0,18,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+22832,car seat organizer front seat,front seat,CONTEXT,19,29,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+22944,carbon fiber steering wheel,carbon fiber,ATTRIBUTE,0,12,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+22944,carbon fiber steering wheel,steering,PRODUCT,13,21,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+22944,carbon fiber steering wheel,heel,ATTRIBUTE,23,27,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+23194,carhartt men's force tappen cargo pant,carhartt,PRODUCT,0,8,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+23194,carhartt men's force tappen cargo pant,men,CONTEXT,9,12,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+23194,carhartt men's force tappen cargo pant,force tappen cargo pant,PRODUCT,15,38,assistant_pilot_v0.1,Reviewed,Provisional rule-guided annotation; verify span boundaries and label during human review.
+23965,catchmaster mouse traps,catchmaster mouse traps,PRODUCT,0,23,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+26281,cigarettes without tobacco,cigarettes,PRODUCT,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+26281,cigarettes without tobacco,without tobacco,CONSTRAINT,11,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+27184,coast soap bars original,coast soap bars,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+27184,coast soap bars original,original,ATTRIBUTE,16,24,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+30861,curtains 40 inch length,curtains,PRODUCT,0,8,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+30861,curtains 40 inch length,40 inch length,ATTRIBUTE,9,23,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+30880,curve led monitor,curve led monitor,PRODUCT,0,17,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+30987,cute bedsets,cute,ATTRIBUTE,0,4,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+30987,cute bedsets,bedsets,PRODUCT,5,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+31750,day night sights for walther ccp,day night sights,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+31750,day night sights for walther ccp,walther ccp,PRODUCT,21,32,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32216,delicate floral wedding engagement set,delicate floral,ATTRIBUTE,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32216,delicate floral wedding engagement set,wedding engagement,OCCASION,16,34,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32216,delicate floral wedding engagement set,set,PRODUCT,35,38,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32585,desk accessories men,desk accessories,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32585,desk accessories men,men,CONTEXT,17,20,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32716,detachable shower heads black,detachable,ATTRIBUTE,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32716,detachable shower heads black,shower heads,PRODUCT,11,23,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+32716,detachable shower heads black,black,ATTRIBUTE,24,29,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+33041,diaper pail,diaper pail,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+34122,do not cross belt,do,PRODUCT,0,2,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+34122,do not cross belt,cross belt,PRODUCT,7,17,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+34355,dog coat,dog coat,PRODUCT,0,8,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+34549,dog sleeping bag,dog sleeping bag,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+36348,ear pellets acupuncture swarski,ear pellets acupuncture swarski,PRODUCT,0,31,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+36377,earbuds,earbuds,PRODUCT,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+36409,earphones,earphones,PRODUCT,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+36611,echo show,echo show,PRODUCT,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+36984,elbow sleeves gym,elbow sleeves gym,PRODUCT,0,17,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+38722,extened battery for the iphone xr,extened battery,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+38722,extened battery for the iphone xr,iphone xr,PRODUCT,24,33,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+39147,face glitter with glue,face glitter,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+39147,face glitter with glue,glue,PRODUCT,18,22,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+39194,face masks without ear loops,face masks,PRODUCT,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+39194,face masks without ear loops,without ear loops,CONSTRAINT,11,28,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+39340,fake candy,fake candy,PRODUCT,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+39861,febreze warmer,febreze warmer,PRODUCT,0,14,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+41798,foldable cube,foldable,ATTRIBUTE,0,8,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+41798,foldable cube,cube,PRODUCT,9,13,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+42236,fortnite cake decorations toppers,fortnite cake decorations toppers,PRODUCT,0,33,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+42280,foster dog mom shirt,foster dog mom shirt,PRODUCT,0,20,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+42578,frenchie diaper,frenchie diaper,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+43448,fundraising tracking poster,fundraising,OCCASION,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+43448,fundraising tracking poster,tracking poster,PRODUCT,12,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+45964,glide dental floss,glide dental floss,PRODUCT,0,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+46109,glucose tabs,glucose tabs,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+47386,green train under 8 dollars,green,ATTRIBUTE,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+47386,green train under 8 dollars,train,PRODUCT,6,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+47386,green train under 8 dollars,under 8 dollars,CONSTRAINT,12,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+48954,handsoap,handsoap,PRODUCT,0,8,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+49348,harry potter infinity scarf,harry potter infinity scarf,PRODUCT,0,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+50270,hercules saxophone stands,hercules saxophone stands,PRODUCT,0,25,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+53964,ipdad,ipdad,PRODUCT,0,5,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+55177,iwata airbrush medea eclipse,iwata airbrush medea eclipse,PRODUCT,0,28,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+56180,johnny cash shirt women,johnny cash shirt,PRODUCT,0,17,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+56180,johnny cash shirt women,women,CONTEXT,18,23,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+56780,k cup classic,k cup,PRODUCT,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+56780,k cup classic,classic,ATTRIBUTE,6,13,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+56950,kapton tape,kapton tape,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58122,kiinde twist storage bags,kiinde twist storage bags,PRODUCT,0,25,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58363,king size pillows set of 2,king size,ATTRIBUTE,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58363,king size pillows set of 2,pillows set,PRODUCT,10,21,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58363,king size pillows set of 2,2,ATTRIBUTE,25,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58602,kitchen portable islands,kitchen,PRODUCT,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58602,kitchen portable islands,portable,ATTRIBUTE,8,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58602,kitchen portable islands,islands,PRODUCT,17,24,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+58983,kohls gift card,kohls gift card,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+60287,lasko standing fan,lasko standing fan,PRODUCT,0,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+61369,lego star wars darth vader transformation,lego star wars darth vader transformation,PRODUCT,0,41,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+62564,lime slicer,lime slicer,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+62804,liquid aminos,liquid aminos,PRODUCT,0,13,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+63412,lone wolf climbing tree stands,lone wolf,PRODUCT,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+63412,lone wolf climbing tree stands,climbing,PURPOSE,10,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+63412,lone wolf climbing tree stands,tree stands,PRODUCT,19,30,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+65387,mandala card game,mandala card game,PRODUCT,0,17,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+65884,markers for kids,markers,PRODUCT,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+65884,markers for kids,for kids,CONTEXT,8,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+69287,mini album dies,mini,ATTRIBUTE,0,4,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+69287,mini album dies,album dies,PRODUCT,5,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+69696,miracle retinol moisturizer,miracle retinol moisturizer,PRODUCT,0,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+69750,mirrored furniture,mirrored,ATTRIBUTE,0,8,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+69750,mirrored furniture,furniture,PRODUCT,9,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+70204,moisturizing eye drops for dry eyes,moisturizing eye drops,PRODUCT,0,22,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+70204,moisturizing eye drops for dry eyes,for dry eyes,PURPOSE,23,35,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+70589,mooncake box,mooncake box,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+71976,n/z,n/z,PRODUCT,0,3,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+72517,navy blue silk fabric,navy blue silk,ATTRIBUTE,0,14,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+72517,navy blue silk fabric,fabric,PRODUCT,15,21,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+72982,netgear router,netgear router,PRODUCT,0,14,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+73123,new design necklace,new design,ATTRIBUTE,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+73123,new design necklace,necklace,PRODUCT,11,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+73623,nike rain jacket,nike rain jacket,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+74935,o-ring pick set,o-ring pick set,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+76818,oven thermometer,oven thermometer,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+79292,peter rabbit 2 the runaway dvd,peter rabbit,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+79292,peter rabbit 2 the runaway dvd,2,ATTRIBUTE,13,14,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+79292,peter rabbit 2 the runaway dvd,runaway dvd,PRODUCT,19,30,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+79532,phone cases for iphone xr,phone cases,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+79532,phone cases for iphone xr,iphone xr,PRODUCT,16,25,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+81379,plexaderm plus rapid reduction cream,plexaderm,PRODUCT,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+81379,plexaderm plus rapid reduction cream,plus rapid reduction,ATTRIBUTE,10,30,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+81379,plexaderm plus rapid reduction cream,cream,PRODUCT,31,36,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+81864,polaroid camera,polaroid camera,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+81964,polo shirts for men,polo shirts,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+81964,polo shirts for men,for men,CONTEXT,12,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+83195,pressure wash hose,pressure wash,PURPOSE,0,13,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+83195,pressure wash hose,hose,PRODUCT,14,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+83646,proline arms,proline arms,PRODUCT,0,12,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+84418,pure blue h2o,pure,PRODUCT,0,4,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+84418,pure blue h2o,blue,ATTRIBUTE,5,9,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+84418,pure blue h2o,2,ATTRIBUTE,11,12,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+85127,qx60,qx60,PRODUCT,0,4,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+85397,rainbow baby shower invitations,rainbow,ATTRIBUTE,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+85397,rainbow baby shower invitations,baby shower,OCCASION,8,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+85397,rainbow baby shower invitations,invitations,PRODUCT,20,31,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+85620,rashguard for women,rashguard,PRODUCT,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+85620,rashguard for women,for women,CONTEXT,10,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+86002,really ripped jeans for women,really ripped,ATTRIBUTE,0,13,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+86002,really ripped jeans for women,jeans,PRODUCT,14,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+86002,really ripped jeans for women,for women,CONTEXT,20,29,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+88977,rubbermaid 5 cup storage containers,rubbermaid,PRODUCT,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+88977,rubbermaid 5 cup storage containers,5 cup,ATTRIBUTE,11,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+88977,rubbermaid 5 cup storage containers,storage containers,PRODUCT,17,35,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+89386,ryans world toy egg blue,ryans world toy egg,PRODUCT,0,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+89386,ryans world toy egg blue,blue,ATTRIBUTE,20,24,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+89899,samoyed tank top,samoyed tank top,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+90087,samsung galaxy note 10 plus phone case,samsung galaxy note 10,PRODUCT,0,22,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+90087,samsung galaxy note 10 plus phone case,plus,ATTRIBUTE,23,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+90087,samsung galaxy note 10 plus phone case,phone case,PRODUCT,28,38,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+90645,satin nickel deadbolt,satin nickel,ATTRIBUTE,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+90645,satin nickel deadbolt,deadbolt,PRODUCT,13,21,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+91189,scroll invitations,scroll invitations,PRODUCT,0,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+91517,see the able not the label,see,PRODUCT,0,3,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+91517,see the able not the label,able,PRODUCT,8,12,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+91517,see the able not the label,label,PRODUCT,21,26,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+91701,senegalese twist hair,senegalese twist hair,PRODUCT,0,21,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+93598,sim card holder for galaxy s7,sim card holder,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+93598,sim card holder for galaxy s7,galaxy s7,PRODUCT,20,29,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94069,ski socks mens,ski socks,PRODUCT,0,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94069,ski socks mens,mens,CONTEXT,10,14,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94654,small club,small,ATTRIBUTE,0,5,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94654,small club,club,PRODUCT,6,10,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94868,small refillable notebooks,small refillable,ATTRIBUTE,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94868,small refillable notebooks,notebooks,PRODUCT,17,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94881,small rugs,small,ATTRIBUTE,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+94881,small rugs,rugs,PRODUCT,6,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+95122,smartwatch android with sim,smartwatch android,PRODUCT,0,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+95122,smartwatch android with sim,sim,PRODUCT,24,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+96492,spanx size e,spanx,PRODUCT,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+96492,spanx size e,size e,ATTRIBUTE,6,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+96549,sparthos arm compression,sparthos arm compression,PRODUCT,0,24,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+97616,star shower motion laser light,star shower,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+97616,star shower motion laser light,motion laser,ATTRIBUTE,12,24,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+97616,star shower motion laser light,light,PRODUCT,25,30,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+98059,steve gregg four views,steve gregg four views,PRODUCT,0,22,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+98154,stiff shipping envelope,stiff,ATTRIBUTE,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+98154,stiff shipping envelope,shipping envelope,PRODUCT,6,23,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+98261,stone mold,stone mold,PRODUCT,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+98773,styrofoam balls,styrofoam balls,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+99318,super junior 05,super junior 05,PRODUCT,0,15,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+99414,supernatural kindle,supernatural kindle,PRODUCT,0,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+99485,surface pro 4 monitor cable,surface pro 4 monitor cable,PRODUCT,0,27,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+99514,surgical clamps,surgical clamps,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+99995,syringe for liquid,syringe,PRODUCT,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+99995,syringe for liquid,for liquid,PURPOSE,8,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+100181,table signs,table signs,PRODUCT,0,11,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+101042,teacher shirts funny,teacher shirts funny,PRODUCT,0,20,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+102406,the sound and the fury audiobook,sound,PRODUCT,4,9,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+102406,the sound and the fury audiobook,fury audiobook,PRODUCT,18,32,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103176,timberland boots for men on clearence,timberland boots,PRODUCT,0,16,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103176,timberland boots for men on clearence,for men,CONTEXT,17,24,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103176,timberland boots for men on clearence,clearence,PRODUCT,28,37,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103784,toddler tennis shoes 10,toddler,CONTEXT,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103784,toddler tennis shoes 10,tennis shoes 10,PRODUCT,8,23,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103996,tommy hilfiger coat for women,tommy hilfiger coat,PRODUCT,0,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+103996,tommy hilfiger coat for women,for women,CONTEXT,20,29,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+104055,tongue scrapers for adults,tongue scrapers,PRODUCT,0,15,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+104055,tongue scrapers for adults,for adults,CONTEXT,16,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+105034,travel purse,travel purse,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+105557,tsa zip lock,tsa zip lock,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+105568,tshirt women yellow cotton,tshirt,PRODUCT,0,6,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+105568,tshirt women yellow cotton,women,CONTEXT,7,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+105568,tshirt women yellow cotton,yellow cotton,ATTRIBUTE,13,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106608,under armour cotton shirts for men,under armour cotton,ATTRIBUTE,0,19,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106608,under armour cotton shirts for men,shirts,PRODUCT,20,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106608,under armour cotton shirts for men,for men,CONTEXT,27,34,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106814,"unicorn inflatable costume, kids",unicorn,PRODUCT,0,7,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106814,"unicorn inflatable costume, kids",inflatable,ATTRIBUTE,8,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106814,"unicorn inflatable costume, kids",costume,PRODUCT,19,26,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+106814,"unicorn inflatable costume, kids",kids,CONTEXT,28,32,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+107174,usana vitamins,usana vitamins,PRODUCT,0,14,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+108480,vibranting panties for woman,vibranting panties,PRODUCT,0,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+108480,vibranting panties for woman,for woman,CONTEXT,19,28,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+109029,vivoactive 3,vivoactive 3,PRODUCT,0,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+110150,waterproof mascara,waterproof,ATTRIBUTE,0,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+110150,waterproof mascara,mascara,PRODUCT,11,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+111264,white rear fiew mirror,white,ATTRIBUTE,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+111264,white rear fiew mirror,rear fiew mirror,PRODUCT,6,22,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+112536,women heel sandals,women,CONTEXT,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+112536,women heel sandals,heel,ATTRIBUTE,6,10,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+112536,women heel sandals,sandals,PRODUCT,11,18,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+112701,women zip up,women,CONTEXT,0,5,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+112701,women zip up,zip up,ATTRIBUTE,6,12,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+114127,ww2 russian pouch,2,ATTRIBUTE,2,3,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+114127,ww2 russian pouch,russian pouch,PRODUCT,4,17,assistant_pilot_v0.1,annotated_pending_human_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
+115543,zazzy,zazzy,PRODUCT,0,5,assistant_pilot_v0.1,needs_review,Provisional rule-guided annotation; verify span boundaries and label during human review.
