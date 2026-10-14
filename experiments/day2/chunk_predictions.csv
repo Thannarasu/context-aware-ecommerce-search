@@ -1,0 +1,85 @@
+query_id,query,chunk_text,chunk_label,start_char,end_char,rule
+412,0-3 months boy sleepers without feet,0-3 months,ATTRIBUTE,0,10,phrase:0-3 months
+412,0-3 months boy sleepers without feet,boy,CONTEXT,11,14,phrase:boy
+412,0-3 months boy sleepers without feet,sleepers,PRODUCT,15,23,phrase:sleepers
+412,0-3 months boy sleepers without feet,without feet,CONSTRAINT,24,36,"regex:\bwithout\b(?:\s+\w+){1,4}"
+649,1 3/4 inch tooled belt strap without belt buckle,1 3/4 inch,ATTRIBUTE,0,10,phrase:1 3/4 inch
+649,1 3/4 inch tooled belt strap without belt buckle,tooled,ATTRIBUTE,11,17,phrase:tooled
+649,1 3/4 inch tooled belt strap without belt buckle,belt strap,PRODUCT,18,28,phrase:belt strap
+649,1 3/4 inch tooled belt strap without belt buckle,without belt buckle,CONSTRAINT,29,48,"regex:\bwithout\b(?:\s+\w+){1,4}"
+752,1 hole kitchen faucet without sprayer,1 hole,ATTRIBUTE,0,6,phrase:1 hole
+752,1 hole kitchen faucet without sprayer,kitchen faucet,PRODUCT,7,21,phrase:kitchen faucet
+752,1 hole kitchen faucet without sprayer,without sprayer,CONSTRAINT,22,37,"regex:\bwithout\b(?:\s+\w+){1,4}"
+2013,12x16 shed plans with garage door,12x16,ATTRIBUTE,0,5,phrase:12x16
+2013,12x16 shed plans with garage door,shed plans,PRODUCT,6,16,phrase:shed plans
+2013,12x16 shed plans with garage door,garage door,ATTRIBUTE,22,33,phrase:garage door
+2898,21 cupcake toppers,cupcake toppers,PRODUCT,3,18,phrase:cupcake toppers
+5136,7/8 o2 sensor wrench,7/8,ATTRIBUTE,0,3,phrase:7/8
+5136,7/8 o2 sensor wrench,o2 sensor,PURPOSE,4,13,phrase:o2 sensor
+5136,7/8 o2 sensor wrench,wrench,PRODUCT,14,20,phrase:wrench
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",timeless,ATTRIBUTE,17,25,phrase:timeless
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",go with any outfit,ATTRIBUTE,39,57,phrase:go with any outfit
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",not a thin fabric but not thick either,CONSTRAINT,59,97,regex:\bnot a thin fabric but not thick either\b
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",get warm easily,CONTEXT,108,123,phrase:get warm easily
+7490,airpod case gucci,airpod case,PRODUCT,0,11,phrase:airpod case
+7490,airpod case gucci,gucci,ATTRIBUTE,12,17,phrase:gucci
+7576,airpods pro case without keychain,airpods pro case,PRODUCT,0,16,phrase:airpods pro case
+7576,airpods pro case without keychain,without keychain,CONSTRAINT,17,33,"regex:\bwithout\b(?:\s+\w+){1,4}"
+9737,apple iphone xr disney case,apple iphone xr,PRODUCT,0,15,phrase:apple iphone xr
+9737,apple iphone xr disney case,disney,ATTRIBUTE,16,22,phrase:disney
+9737,apple iphone xr disney case,case,PRODUCT,23,27,phrase:case
+10039,aquarium lid,aquarium lid,PRODUCT,0,12,phrase:aquarium lid
+10997,atomic habits,atomic habits,PRODUCT,0,13,phrase:atomic habits
+11585,b brand face mask,b brand face mask,PRODUCT,0,17,phrase:b brand face mask
+12041,baby knobby ball,baby knobby ball,PRODUCT,0,16,phrase:baby knobby ball
+12559,badgley mischka shoes,badgley mischka shoes,PRODUCT,0,21,phrase:badgley mischka shoes
+13079,bar q grill charcoal,bar q grill charcoal,PRODUCT,0,20,phrase:bar q grill charcoal
+13675,bathing suit surong women,bathing suit surong,PRODUCT,0,19,phrase:bathing suit surong
+13675,bathing suit surong women,women,CONTEXT,20,25,phrase:women
+16695,black out curtains,black out curtains,PRODUCT,0,18,phrase:black out curtains
+18009,boho decor,boho decor,PRODUCT,0,10,phrase:boho decor
+18040,boho wall decor,boho wall decor,PRODUCT,0,15,phrase:boho wall decor
+18043,bohosteering wheel cover,wheel cover,PRODUCT,13,24,phrase:wheel cover
+20435,building writers learning without tears,building writers learning without tears,PRODUCT,0,39,phrase:building writers learning without tears
+21010,c.c bun beanies for women,c.c bun beanies,PRODUCT,0,15,phrase:c.c bun beanies
+21010,c.c bun beanies for women,for women,CONTEXT,16,25,phrase:for women
+21510,calcutta d,calcutta d,PRODUCT,0,10,phrase:calcutta d
+22186,camping sleeping pad,camping sleeping pad,PRODUCT,0,20,phrase:camping sleeping pad
+22832,car seat organizer front seat,car seat organizer,PRODUCT,0,18,phrase:car seat organizer
+22832,car seat organizer front seat,front seat,CONTEXT,19,29,phrase:front seat
+22944,carbon fiber steering wheel,carbon fiber,ATTRIBUTE,0,12,phrase:carbon fiber
+22944,carbon fiber steering wheel,steering wheel,PRODUCT,13,27,phrase:steering wheel
+23194,carhartt men's force tappen cargo pant,carhartt,PRODUCT,0,8,phrase:carhartt
+23194,carhartt men's force tappen cargo pant,men's,CONTEXT,9,14,phrase:men's
+23194,carhartt men's force tappen cargo pant,force tappen cargo pant,PRODUCT,15,38,phrase:force tappen cargo pant
+26281,cigarettes without tobacco,without tobacco,CONSTRAINT,11,26,"regex:\bwithout\b(?:\s+\w+){1,4}"
+30861,curtains 40 inch length,curtains,PRODUCT,0,8,phrase:curtains
+32216,delicate floral wedding engagement set,wedding,OCCASION,16,23,phrase:wedding
+32716,detachable shower heads black,detachable,ATTRIBUTE,0,10,phrase:detachable
+32716,detachable shower heads black,black,ATTRIBUTE,24,29,phrase:black
+34122,do not cross belt,belt,PRODUCT,13,17,phrase:belt
+39194,face masks without ear loops,without ear loops,CONSTRAINT,11,28,"regex:\bwithout\b(?:\s+\w+){1,4}"
+47386,green train under 8 dollars,under 8 dollars,CONSTRAINT,12,27,"regex:\bunder\s+\$?\d+(?:\.\d{1,2})?(?:\s+dollars?)?\b"
+56180,johnny cash shirt women,women,CONTEXT,18,23,phrase:women
+72517,navy blue silk fabric,navy blue silk fabric,PRODUCT,0,21,phrase:navy blue silk fabric
+79532,phone cases for iphone xr,phone cases,PRODUCT,0,11,phrase:phone cases
+81964,polo shirts for men,shirts,PRODUCT,5,11,phrase:shirts
+84418,pure blue h2o,blue,ATTRIBUTE,5,9,phrase:blue
+85620,rashguard for women,for women,CONTEXT,10,19,phrase:for women
+86002,really ripped jeans for women,for women,CONTEXT,20,29,phrase:for women
+89386,ryans world toy egg blue,blue,ATTRIBUTE,20,24,phrase:blue
+90087,samsung galaxy note 10 plus phone case,phone case,PRODUCT,28,38,phrase:phone case
+101042,teacher shirts funny,shirts,PRODUCT,8,14,phrase:shirts
+103784,toddler tennis shoes 10,toddler tennis shoes,PRODUCT,0,20,phrase:toddler tennis shoes
+103996,tommy hilfiger coat for women,for women,CONTEXT,20,29,phrase:for women
+104055,tongue scrapers for adults,tongue scrapers,PRODUCT,0,15,phrase:tongue scrapers
+104055,tongue scrapers for adults,for adults,CONTEXT,16,26,phrase:for adults
+105568,tshirt women yellow cotton,women,CONTEXT,7,12,phrase:women
+105568,tshirt women yellow cotton,yellow,ATTRIBUTE,13,19,phrase:yellow
+105568,tshirt women yellow cotton,cotton,ATTRIBUTE,20,26,phrase:cotton
+106608,under armour cotton shirts for men,cotton,ATTRIBUTE,13,19,phrase:cotton
+106608,under armour cotton shirts for men,shirts,PRODUCT,20,26,phrase:shirts
+110150,waterproof mascara,waterproof,ATTRIBUTE,0,10,phrase:waterproof
+110150,waterproof mascara,mascara,PRODUCT,11,18,phrase:mascara
+112536,women heel sandals,women,CONTEXT,0,5,phrase:women
+112701,women zip up,women,CONTEXT,0,5,phrase:women
