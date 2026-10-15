@@ -1,0 +1,79 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "queries_evaluated": 28,
+  "gold_spans_unique": 60,
+  "predicted_spans_unique": 69,
+  "true_positive": 32,
+  "false_positive": 37,
+  "false_negative": 28,
+  "precision": 0.463768,
+  "recall": 0.533333,
+  "f1": 0.496124,
+  "duplicate_gold_rows": 0,
+  "duplicate_prediction_rows": 0,
+  "invalid_gold_rows": [],
+  "invalid_prediction_rows": [],
+  "per_label": {
+    "ATTRIBUTE": {
+      "gold_spans": 15,
+      "predicted_spans": 27,
+      "true_positive": 10,
+      "false_positive": 17,
+      "false_negative": 5,
+      "precision": 0.37037,
+      "recall": 0.666667,
+      "f1": 0.47619
+    },
+    "CONSTRAINT": {
+      "gold_spans": 6,
+      "predicted_spans": 5,
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.833333,
+      "f1": 0.909091
+    },
+    "CONTEXT": {
+      "gold_spans": 6,
+      "predicted_spans": 6,
+      "true_positive": 4,
+      "false_positive": 2,
+      "false_negative": 2,
+      "precision": 0.666667,
+      "recall": 0.666667,
+      "f1": 0.666667
+    },
+    "PRODUCT": {
+      "gold_spans": 32,
+      "predicted_spans": 27,
+      "true_positive": 12,
+      "false_positive": 15,
+      "false_negative": 20,
+      "precision": 0.444444,
+      "recall": 0.375,
+      "f1": 0.40678
+    },
+    "PURPOSE": {
+      "gold_spans": 1,
+      "predicted_spans": 4,
+      "true_positive": 1,
+      "false_positive": 3,
+      "false_negative": 0,
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4
+    }
+  },
+  "error_report_rows": 58,
+  "error_type_counts": {
+    "EXACT_MATCH": 32,
+    "LIKELY_OVER_SEGMENTATION": 11,
+    "BOUNDARY_MISMATCH": 6,
+    "OVERLAP_AND_LABEL_MISMATCH": 3,
+    "LIKELY_UNDER_SEGMENTATION": 3,
+    "LABEL_MISMATCH": 2,
+    "EXTRA_PREDICTION": 1
+  },
+  "note": "Error types other than exact matches are diagnostic heuristics. Review examples manually before making research claims."
+}

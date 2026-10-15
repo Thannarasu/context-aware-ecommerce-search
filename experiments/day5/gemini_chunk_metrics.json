@@ -1,0 +1,65 @@
+{
+  "gold_spans": 60,
+  "predicted_spans": 64,
+  "true_positive": 28,
+  "false_positive": 36,
+  "false_negative": 32,
+  "precision": 0.4375,
+  "recall": 0.4666666666666667,
+  "f1": 0.45161290322580644,
+  "successful_queries": 28,
+  "failed_queries": 0,
+  "queries_evaluated_for_metrics": 28,
+  "per_label": {
+    "ATTRIBUTE": {
+      "gold_spans": 15,
+      "predicted_spans": 25,
+      "true_positive": 9,
+      "false_positive": 16,
+      "false_negative": 6,
+      "precision": 0.36,
+      "recall": 0.6,
+      "f1": 0.45
+    },
+    "CONSTRAINT": {
+      "gold_spans": 6,
+      "predicted_spans": 5,
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "CONTEXT": {
+      "gold_spans": 6,
+      "predicted_spans": 4,
+      "true_positive": 2,
+      "false_positive": 2,
+      "false_negative": 4,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1": 0.4
+    },
+    "PRODUCT": {
+      "gold_spans": 32,
+      "predicted_spans": 28,
+      "true_positive": 12,
+      "false_positive": 16,
+      "false_negative": 20,
+      "precision": 0.42857142857142855,
+      "recall": 0.375,
+      "f1": 0.39999999999999997
+    },
+    "PURPOSE": {
+      "gold_spans": 1,
+      "predicted_spans": 2,
+      "true_positive": 0,
+      "false_positive": 2,
+      "false_negative": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  }
+}

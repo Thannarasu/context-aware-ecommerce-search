@@ -1,0 +1,59 @@
+query_id,query,error_type,gold_text,gold_label,gold_start,gold_end,predicted_text,predicted_label,predicted_start,predicted_end,notes
+10039,aquarium lid,EXACT_MATCH,aquarium lid,PRODUCT,0.0,12.0,aquarium lid,PRODUCT,0.0,12.0,"Exact query ID, offsets and label match."
+10997,atomic habits,EXACT_MATCH,atomic habits,PRODUCT,0.0,13.0,atomic habits,PRODUCT,0.0,13.0,"Exact query ID, offsets and label match."
+11585,b brand face mask,LIKELY_OVER_SEGMENTATION,b brand face mask,PRODUCT,0.0,17.0,,,,,Predictions inside gold span: b brand | face mask; labels: ATTRIBUTE | PRODUCT. Heuristic; manually review.
+12041,baby knobby ball,LIKELY_OVER_SEGMENTATION,baby knobby ball,PRODUCT,0.0,16.0,,,,,Predictions inside gold span: baby | knobby ball; labels: CONTEXT | PRODUCT. Heuristic; manually review.
+12559,badgley mischka shoes,LIKELY_OVER_SEGMENTATION,badgley mischka shoes,PRODUCT,0.0,21.0,,,,,Predictions inside gold span: badgley mischka | shoes; labels: ATTRIBUTE | PRODUCT. Heuristic; manually review.
+13079,bar q grill charcoal,LIKELY_OVER_SEGMENTATION,bar q grill charcoal,PRODUCT,0.0,20.0,,,,,Predictions inside gold span: bar q grill | charcoal; labels: PRODUCT | ATTRIBUTE. Heuristic; manually review.
+13675,bathing suit surong women,LIKELY_OVER_SEGMENTATION,bathing suit surong,PRODUCT,0.0,19.0,,,,,Predictions inside gold span: bathing suit | surong; labels: PRODUCT | ATTRIBUTE. Heuristic; manually review.
+13675,bathing suit surong women,EXACT_MATCH,women,CONTEXT,20.0,25.0,women,CONTEXT,20.0,25.0,"Exact query ID, offsets and label match."
+16695,black out curtains,BOUNDARY_MISMATCH,black,ATTRIBUTE,0.0,5.0,black out,ATTRIBUTE,0.0,9.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+16695,black out curtains,BOUNDARY_MISMATCH,out curtains,PRODUCT,6.0,18.0,curtains,PRODUCT,10.0,18.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+18009,boho decor,LIKELY_OVER_SEGMENTATION,boho decor,PRODUCT,0.0,10.0,,,,,Predictions inside gold span: boho | decor; labels: ATTRIBUTE | PRODUCT. Heuristic; manually review.
+18040,boho wall decor,LIKELY_OVER_SEGMENTATION,boho wall decor,PRODUCT,0.0,15.0,,,,,Predictions inside gold span: boho | wall decor; labels: ATTRIBUTE | PRODUCT. Heuristic; manually review.
+18043,bohosteering wheel cover,OVERLAP_AND_LABEL_MISMATCH,bohosteering,PRODUCT,0.0,12.0,boho,ATTRIBUTE,0.0,4.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+18043,bohosteering wheel cover,LIKELY_UNDER_SEGMENTATION,,,,,steering wheel cover,PRODUCT,4.0,24.0,Gold spans inside prediction: heel | cover; labels: ATTRIBUTE | PRODUCT. Heuristic; manually review.
+2013,12x16 shed plans with garage door,EXACT_MATCH,12x16,ATTRIBUTE,0.0,5.0,12x16,ATTRIBUTE,0.0,5.0,"Exact query ID, offsets and label match."
+2013,12x16 shed plans with garage door,LIKELY_OVER_SEGMENTATION,shed plans,PRODUCT,6.0,16.0,,,,,Predictions inside gold span: shed | plans; labels: PRODUCT | PURPOSE. Heuristic; manually review.
+2013,12x16 shed plans with garage door,BOUNDARY_MISMATCH,garage door,ATTRIBUTE,22.0,33.0,with garage door,ATTRIBUTE,17.0,33.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+20435,building writers learning without tears,BOUNDARY_MISMATCH,building writers learning,PRODUCT,0.0,25.0,building writers,PRODUCT,0.0,16.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+20435,building writers learning without tears,LIKELY_UNDER_SEGMENTATION,,,,,learning without tears,ATTRIBUTE,17.0,39.0,Gold spans inside prediction: without | tears; labels: CONSTRAINT | PRODUCT. Heuristic; manually review.
+21010,c.c bun beanies for women,OVERLAP_AND_LABEL_MISMATCH,c,PRODUCT,0.0,1.0,c.c,ATTRIBUTE,0.0,3.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+21010,c.c bun beanies for women,BOUNDARY_MISMATCH,c bun beanies,PRODUCT,2.0,15.0,bun beanies,PRODUCT,4.0,15.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+21010,c.c bun beanies for women,EXACT_MATCH,for women,CONTEXT,16.0,25.0,for women,CONTEXT,16.0,25.0,"Exact query ID, offsets and label match."
+21510,calcutta d,LIKELY_OVER_SEGMENTATION,calcutta d,PRODUCT,0.0,10.0,,,,,Predictions inside gold span: calcutta | d; labels: ATTRIBUTE | ATTRIBUTE. Heuristic; manually review.
+22186,camping sleeping pad,LIKELY_OVER_SEGMENTATION,camping sleeping pad,PRODUCT,0.0,20.0,,,,,Predictions inside gold span: camping | sleeping pad; labels: PURPOSE | PRODUCT. Heuristic; manually review.
+22832,car seat organizer front seat,EXACT_MATCH,car seat organizer,PRODUCT,0.0,18.0,car seat organizer,PRODUCT,0.0,18.0,"Exact query ID, offsets and label match."
+22832,car seat organizer front seat,EXACT_MATCH,front seat,CONTEXT,19.0,29.0,front seat,CONTEXT,19.0,29.0,"Exact query ID, offsets and label match."
+22944,carbon fiber steering wheel,EXACT_MATCH,carbon fiber,ATTRIBUTE,0.0,12.0,carbon fiber,ATTRIBUTE,0.0,12.0,"Exact query ID, offsets and label match."
+22944,carbon fiber steering wheel,LIKELY_UNDER_SEGMENTATION,,,,,steering wheel,PRODUCT,13.0,27.0,Gold spans inside prediction: steering | heel; labels: PRODUCT | ATTRIBUTE. Heuristic; manually review.
+23194,carhartt men's force tappen cargo pant,LABEL_MISMATCH,carhartt,PRODUCT,0.0,8.0,carhartt,ATTRIBUTE,0.0,8.0,"Same boundaries, different labels."
+23194,carhartt men's force tappen cargo pant,OVERLAP_AND_LABEL_MISMATCH,men,CONTEXT,9.0,12.0,men's,ATTRIBUTE,9.0,14.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+23194,carhartt men's force tappen cargo pant,LIKELY_OVER_SEGMENTATION,force tappen cargo pant,PRODUCT,15.0,38.0,,,,,Predictions inside gold span: force tappen | cargo pant; labels: ATTRIBUTE | PRODUCT. Heuristic; manually review.
+2898,21 cupcake toppers,EXACT_MATCH,cupcake toppers,PRODUCT,3.0,18.0,cupcake toppers,PRODUCT,3.0,18.0,"Exact query ID, offsets and label match."
+2898,21 cupcake toppers,EXTRA_PREDICTION,,,,,21,ATTRIBUTE,0.0,2.0,No exact or overlapping unmatched gold span was paired.
+412,0-3 months boy sleepers without feet,EXACT_MATCH,0-3 months,ATTRIBUTE,0.0,10.0,0-3 months,ATTRIBUTE,0.0,10.0,"Exact query ID, offsets and label match."
+412,0-3 months boy sleepers without feet,EXACT_MATCH,boy,CONTEXT,11.0,14.0,boy,CONTEXT,11.0,14.0,"Exact query ID, offsets and label match."
+412,0-3 months boy sleepers without feet,EXACT_MATCH,sleepers,PRODUCT,15.0,23.0,sleepers,PRODUCT,15.0,23.0,"Exact query ID, offsets and label match."
+412,0-3 months boy sleepers without feet,EXACT_MATCH,without feet,CONSTRAINT,24.0,36.0,without feet,CONSTRAINT,24.0,36.0,"Exact query ID, offsets and label match."
+5136,7/8 o2 sensor wrench,EXACT_MATCH,7/8,ATTRIBUTE,0.0,3.0,7/8,ATTRIBUTE,0.0,3.0,"Exact query ID, offsets and label match."
+5136,7/8 o2 sensor wrench,EXACT_MATCH,o2 sensor,PURPOSE,4.0,13.0,o2 sensor,PURPOSE,4.0,13.0,"Exact query ID, offsets and label match."
+5136,7/8 o2 sensor wrench,EXACT_MATCH,wrench,PRODUCT,14.0,20.0,wrench,PRODUCT,14.0,20.0,"Exact query ID, offsets and label match."
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",EXACT_MATCH,timeless,ATTRIBUTE,17.0,25.0,timeless,ATTRIBUTE,17.0,25.0,"Exact query ID, offsets and label match."
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",LABEL_MISMATCH,go with any outfit,ATTRIBUTE,39.0,57.0,go with any outfit,PURPOSE,39.0,57.0,"Same boundaries, different labels."
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",EXACT_MATCH,not a thin fabric but not thick either,CONSTRAINT,59.0,97.0,not a thin fabric but not thick either,CONSTRAINT,59.0,97.0,"Exact query ID, offsets and label match."
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",BOUNDARY_MISMATCH,get warm easily,CONTEXT,108.0,123.0,I get warm easily,CONTEXT,106.0,123.0,Overlapping non-exact spans; inspect boundaries and labels manually.
+649,1 3/4 inch tooled belt strap without belt buckle,EXACT_MATCH,1 3/4 inch,ATTRIBUTE,0.0,10.0,1 3/4 inch,ATTRIBUTE,0.0,10.0,"Exact query ID, offsets and label match."
+649,1 3/4 inch tooled belt strap without belt buckle,EXACT_MATCH,tooled,ATTRIBUTE,11.0,17.0,tooled,ATTRIBUTE,11.0,17.0,"Exact query ID, offsets and label match."
+649,1 3/4 inch tooled belt strap without belt buckle,EXACT_MATCH,belt strap,PRODUCT,18.0,28.0,belt strap,PRODUCT,18.0,28.0,"Exact query ID, offsets and label match."
+649,1 3/4 inch tooled belt strap without belt buckle,EXACT_MATCH,without belt buckle,CONSTRAINT,29.0,48.0,without belt buckle,CONSTRAINT,29.0,48.0,"Exact query ID, offsets and label match."
+7490,airpod case gucci,EXACT_MATCH,airpod case,PRODUCT,0.0,11.0,airpod case,PRODUCT,0.0,11.0,"Exact query ID, offsets and label match."
+7490,airpod case gucci,EXACT_MATCH,gucci,ATTRIBUTE,12.0,17.0,gucci,ATTRIBUTE,12.0,17.0,"Exact query ID, offsets and label match."
+752,1 hole kitchen faucet without sprayer,EXACT_MATCH,1 hole,ATTRIBUTE,0.0,6.0,1 hole,ATTRIBUTE,0.0,6.0,"Exact query ID, offsets and label match."
+752,1 hole kitchen faucet without sprayer,EXACT_MATCH,kitchen faucet,PRODUCT,7.0,21.0,kitchen faucet,PRODUCT,7.0,21.0,"Exact query ID, offsets and label match."
+752,1 hole kitchen faucet without sprayer,EXACT_MATCH,without sprayer,CONSTRAINT,22.0,37.0,without sprayer,CONSTRAINT,22.0,37.0,"Exact query ID, offsets and label match."
+7576,airpods pro case without keychain,EXACT_MATCH,airpods pro case,PRODUCT,0.0,16.0,airpods pro case,PRODUCT,0.0,16.0,"Exact query ID, offsets and label match."
+7576,airpods pro case without keychain,EXACT_MATCH,without keychain,CONSTRAINT,17.0,33.0,without keychain,CONSTRAINT,17.0,33.0,"Exact query ID, offsets and label match."
+9737,apple iphone xr disney case,EXACT_MATCH,apple iphone xr,PRODUCT,0.0,15.0,apple iphone xr,PRODUCT,0.0,15.0,"Exact query ID, offsets and label match."
+9737,apple iphone xr disney case,EXACT_MATCH,disney,ATTRIBUTE,16.0,22.0,disney,ATTRIBUTE,16.0,22.0,"Exact query ID, offsets and label match."
+9737,apple iphone xr disney case,EXACT_MATCH,case,PRODUCT,23.0,27.0,case,PRODUCT,23.0,27.0,"Exact query ID, offsets and label match."

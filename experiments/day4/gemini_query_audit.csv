@@ -1,0 +1,29 @@
+query_id,query,gold_spans,predicted_spans,exact_matches,false_positives,false_negatives
+10039,aquarium lid,1,1,1,0,0
+10997,atomic habits,1,1,1,0,0
+11585,b brand face mask,1,2,0,2,1
+12041,baby knobby ball,1,2,0,2,1
+12559,badgley mischka shoes,1,2,0,2,1
+13079,bar q grill charcoal,1,2,0,2,1
+13675,bathing suit surong women,2,3,1,2,1
+16695,black out curtains,2,2,0,2,2
+18009,boho decor,1,2,0,2,1
+18040,boho wall decor,1,2,0,2,1
+18043,bohosteering wheel cover,3,2,0,2,3
+2013,12x16 shed plans with garage door,3,4,1,3,2
+20435,building writers learning without tears,3,2,0,2,3
+21010,c.c bun beanies for women,3,3,1,2,2
+21510,calcutta d,1,2,0,2,1
+22186,camping sleeping pad,1,2,0,2,1
+22832,car seat organizer front seat,2,2,2,0,0
+22944,carbon fiber steering wheel,3,2,1,1,2
+23194,carhartt men's force tappen cargo pant,3,4,0,4,3
+2898,21 cupcake toppers,1,2,1,1,0
+412,0-3 months boy sleepers without feet,4,4,4,0,0
+5136,7/8 o2 sensor wrench,3,3,3,0,0
+5659,"I need something timeless and that can go with any outfit, not a thin fabric but not thick either because I get warm easily.",4,4,2,2,2
+649,1 3/4 inch tooled belt strap without belt buckle,4,4,4,0,0
+7490,airpod case gucci,2,2,2,0,0
+752,1 hole kitchen faucet without sprayer,3,3,3,0,0
+7576,airpods pro case without keychain,2,2,2,0,0
+9737,apple iphone xr disney case,3,3,3,0,0
