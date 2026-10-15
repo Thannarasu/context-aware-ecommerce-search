@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "requested_limit": 3,
+  "queries_attempted": 3,
+  "queries_succeeded": 3,
+  "queries_failed": 0,
+  "total_elapsed_seconds": 38.883,
+  "prediction_file": "experiments\\day4\\gemini_query_predictions.csv",
+  "chunk_file": "experiments\\day4\\gemini_chunk_predictions.csv",
+  "errors_file": "experiments\\day4\\gemini_errors.csv",
+  "metrics_file": "experiments\\day4\\gemini_chunk_metrics.json"
+}

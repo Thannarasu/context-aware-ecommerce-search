@@ -57,7 +57,7 @@ if run:
     else:
         try:
             with st.spinner("Gemini is analyzing your query..."):
-                result = analyze_query(query)
+                result = analyze_query_with_retry(query)
 
             st.success("Query analysis completed.")
 

@@ -1,0 +1,5 @@
+query_id,query,chunk_text,chunk_label,start_char,end_char,span_found
+10039,aquarium lid,aquarium lid,PRODUCT,0,12,True
+10997,atomic habits,atomic habits,PRODUCT,0,13,True
+11585,b brand face mask,b brand,ATTRIBUTE,0,7,True
+11585,b brand face mask,face mask,PRODUCT,8,17,True
