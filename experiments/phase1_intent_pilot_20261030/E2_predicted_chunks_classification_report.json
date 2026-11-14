@@ -1,0 +1,45 @@
+{
+  "ATTRIBUTE_SEARCH": {
+    "precision": 0.3333333333333333,
+    "recall": 0.4,
+    "f1-score": 0.36363636363636365,
+    "support": 5.0
+  },
+  "CONTEXT_CONSTRAINT_SEARCH": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2.0
+  },
+  "OCCASION_SEARCH": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2.0
+  },
+  "PRODUCT_SEARCH": {
+    "precision": 0.8275862068965517,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.8571428571428571,
+    "support": 27.0
+  },
+  "USE_CASE_SEARCH": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2.0
+  },
+  "accuracy": 0.7631578947368421,
+  "macro avg": {
+    "precision": 0.6321839080459769,
+    "recall": 0.5577777777777777,
+    "f1-score": 0.5774891774891775,
+    "support": 38.0
+  },
+  "weighted avg": {
+    "precision": 0.7371445856019359,
+    "recall": 0.7631578947368421,
+    "f1-score": 0.7445887445887446,
+    "support": 38.0
+  }
+}

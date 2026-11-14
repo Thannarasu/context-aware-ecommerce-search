@@ -1,5 +1,8 @@
 
 from pathlib import Path
+import argparse
+import hashlib
+import joblib
 
 import json
 import warnings
@@ -27,7 +30,7 @@ CHUNK_FILE_CANDIDATES = [
 
 # True: run a pipeline smoke test using current provisional labels.
 # False: use only rows explicitly marked "reviewed".
-USE_PROVISIONAL_LABELS = True
+USE_PROVISIONAL_LABELS = False
 
 RANDOM_STATE = 42
 TEST_SIZE = 0.25
@@ -65,6 +68,9 @@ def load_data():
         )
     else:
         intents = intents[intents["review_status"].eq("reviewed")].copy()
+        if "annotator" in intents.columns:
+            intents = intents[~intents["annotator"].fillna("").str.contains(
+                "assistant|provisional", case=False, regex=True)].copy()
 
     intents = intents[
         intents["query"].ne("") & intents["intent_label"].ne("")
@@ -177,13 +183,26 @@ def evaluate_experiment(name, train_text, test_text, y_train, y_test, test_ids):
         "correct": np.asarray(y_test) == predictions,
     })
 
-    return metrics, report, prediction_df
+    return metrics, report, prediction_df, model
 
 
 def main():
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    global OUTPUT_DIR, USE_PROVISIONAL_LABELS, INTENT_FILE
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--intent-file", type=Path, default=INTENT_FILE)
+    parser.add_argument("--allow-provisional", action="store_true",
+                        help="Explicit development pilot only; not validated performance")
+    args = parser.parse_args()
+    OUTPUT_DIR, INTENT_FILE = args.output_dir, args.intent_file
+    USE_PROVISIONAL_LABELS = args.allow_provisional
+    if OUTPUT_DIR.exists():
+        parser.error("Choose a new output directory to preserve historical results")
 
     intents, chunks, chunk_path = load_data()
+    OUTPUT_DIR.mkdir(parents=True)
+    if intents["query"].str.lower().str.replace(r"\s+", " ", regex=True).duplicated().any():
+        raise ValueError("Duplicate query text: create grouped splits before training")
 
     # Aggregate predictions in source-text order.
     if "start_char" in chunks.columns:
@@ -240,7 +259,7 @@ def main():
         ("E1_raw_query", "raw_text"),
         ("E2_predicted_chunks", "chunk_text_input"),
     ]:
-        metrics, report, predictions = evaluate_experiment(
+        metrics, report, predictions, model = evaluate_experiment(
             name=name,
             train_text=train_df[column].tolist(),
             test_text=test_df[column].tolist(),
@@ -250,6 +269,12 @@ def main():
         )
 
         results.append(metrics)
+        joblib.dump(model, OUTPUT_DIR / f"{name}.joblib")
+        (OUTPUT_DIR / f"{name}.metadata.json").write_text(json.dumps({
+            "mode": "development_pilot" if USE_PROVISIONAL_LABELS else "reviewed_labels",
+            "representation": column,
+            "intent_sha256": hashlib.sha256(INTENT_FILE.read_bytes()).hexdigest(),
+        }, indent=2), encoding="utf-8")
         predictions.to_csv(
             OUTPUT_DIR / f"{name}_predictions.csv", index=False
         )
@@ -273,6 +298,10 @@ def main():
         "intent_file": str(INTENT_FILE),
         "chunk_file": str(chunk_path),
         "provisional_labels_used": USE_PROVISIONAL_LABELS,
+        "input_sha256": {
+            str(p): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in (INTENT_FILE, chunk_path)
+        },
         "random_state": RANDOM_STATE,
         "test_size": TEST_SIZE,
         "split_query_ids": {

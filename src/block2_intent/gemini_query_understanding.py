@@ -58,7 +58,9 @@ def analyze_query(query: str) -> dict:
     if not query:
         raise ValueError("Please enter a shopping query.")
 
-    model = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+    model = os.getenv("GEMINI_MODEL", "").strip()
+    if not model:
+        raise RuntimeError("Set GEMINI_MODEL to a model available in your account.")
 
     prompt = f"""
 You are the query-understanding component of a research prototype

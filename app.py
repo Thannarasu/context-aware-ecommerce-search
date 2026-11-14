@@ -1,7 +1,7 @@
 
 import streamlit as st
 
-from src.block2_intent.gemini_query_understanding import analyze_query
+from src.pipeline import analyze
 
 
 st.set_page_config(
@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.title("🔎 Context-Aware E-commerce Search")
 st.caption(
-    "M.Tech research prototype | Gemini-powered query chunking "
+    "M.Tech research prototype | Comparative query chunking "
     "and intent classification"
 )
 
@@ -49,21 +49,26 @@ query = st.text_area(
     placeholder="Describe the product you are looking for...",
 )
 
-run = st.button("Analyze query", type="primary", use_container_width=True)
+method = st.selectbox("Analysis method", ["rule_based", "gemini", "distilbert"])
+run = st.button("Analyze query", type="primary", width="stretch")
 
 if run:
     if not query.strip():
         st.warning("Please enter a shopping query.")
     else:
         try:
-            with st.spinner("Gemini is analyzing your query..."):
-                result = analyze_query_with_retry(query)
+            with st.spinner("Analyzing your query..."):
+                result = analyze(query, method)
 
             st.success("Query analysis completed.")
 
             st.subheader("1. Primary intent")
             st.metric("Intent", result["primary_intent"])
             st.write(result["intent_explanation"])
+            if result.get("intent_model_status") == "development_pilot":
+                st.caption("Experimental intent model trained with provisional pilot labels.")
+            if result.get("chunk_model_status") == "development_pilot":
+                st.caption("Experimental transformer trained on the small development pilot corpus.")
 
             left, right = st.columns(2)
 
@@ -79,7 +84,7 @@ if run:
                             }
                             for chunk in result["chunks"]
                         ],
-                        use_container_width=True,
+                        width="stretch",
                         hide_index=True,
                     )
                 else:
@@ -118,7 +123,7 @@ if run:
                 "Query analysis failed. Check your API key, model access, "
                 "network connection and error details."
             )
-            st.exception(exc)
+            st.error(f"{type(exc).__name__}: analysis could not complete. Check server logs or model configuration.")
 
 st.divider()
 st.caption(

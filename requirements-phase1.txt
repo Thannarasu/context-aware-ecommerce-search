@@ -1,0 +1,11 @@
+# Direct dependencies; legacy requirements.txt retained for historical context.
+pandas==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.3
+streamlit==1.65.0
+google-genai==2.30.1
+pydantic==2.14.1
+python-dotenv==1.2.4
+torch==2.14.1
+transformers==5.20.1
+pyarrow==25.0.1

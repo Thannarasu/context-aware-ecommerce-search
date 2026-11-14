@@ -166,4 +166,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-python src/data/prepare_queries.py

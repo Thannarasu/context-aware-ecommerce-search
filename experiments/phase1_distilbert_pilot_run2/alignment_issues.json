@@ -1,0 +1,20 @@
+[
+  {
+    "query_id": "22944",
+    "chunk_label": "ATTRIBUTE",
+    "start_char": 23,
+    "end_char": 27,
+    "review_status": "reviewed",
+    "query": "carbon fiber steering wheel",
+    "selected_text": "heel"
+  },
+  {
+    "query_id": "18043",
+    "chunk_label": "ATTRIBUTE",
+    "start_char": 14,
+    "end_char": 18,
+    "review_status": "reviewed",
+    "query": "bohosteering wheel cover",
+    "selected_text": "heel"
+  }
+]

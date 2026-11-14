@@ -1,0 +1,46 @@
+{
+  "mode": "development_pilot",
+  "config": {
+    "queries": "E:\\E-Mtech\\Project\\context-aware-ecommerce-search\\data\\annotations\\query_sample.csv",
+    "gold": "E:\\E-Mtech\\Project\\context-aware-ecommerce-search\\data\\annotations\\chunk_annotations_reviewed.csv",
+    "output": "experiments\\phase1_distilbert_pilot_manifest",
+    "splits": null,
+    "pilot": true,
+    "prepare_only": true,
+    "checkpoint": "distilbert/distilbert-base-uncased",
+    "local_files_only": false,
+    "seed": 42,
+    "epochs": 5,
+    "batch_size": 8
+  },
+  "sha256": {
+    "E:\\E-Mtech\\Project\\context-aware-ecommerce-search\\data\\annotations\\query_sample.csv": "48faf6e3e940d3d18d173084cd3d1e686274ff13f1100f000d2697c2a7b784d2",
+    "E:\\E-Mtech\\Project\\context-aware-ecommerce-search\\data\\annotations\\chunk_annotations_reviewed.csv": "79e086a47eb00daa249581c81aef06145b6590a2f390e8ff4d126ef1def3cb94"
+  },
+  "label_support": {
+    "train": {
+      "PRODUCT": 17,
+      "ATTRIBUTE": 10,
+      "PURPOSE": 1,
+      "OCCASION": 0,
+      "CONTEXT": 4,
+      "CONSTRAINT": 2
+    },
+    "validation": {
+      "PRODUCT": 7,
+      "ATTRIBUTE": 1,
+      "PURPOSE": 0,
+      "OCCASION": 0,
+      "CONTEXT": 1,
+      "CONSTRAINT": 1
+    },
+    "test": {
+      "PRODUCT": 8,
+      "ATTRIBUTE": 4,
+      "PURPOSE": 0,
+      "OCCASION": 0,
+      "CONTEXT": 1,
+      "CONSTRAINT": 3
+    }
+  }
+}

@@ -7,7 +7,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.block2_intent.gemini_query_understanding import analyze_query
+from src.evaluation.spans import assign_predicted_spans, calculate_span_metrics
+
+
+def analyze_query(query):
+    from src.block2_intent.gemini_query_understanding import analyze_query as run
+    return run(query)
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -111,144 +116,15 @@ def analyze_query_with_retry(query, max_attempts=4):
     raise RuntimeError("Gemini retries exhausted.")
 
 
-def find_span_occurrences(query, chunk_text):
-    """Find every exact, case-sensitive occurrence of a chunk in a query."""
-    if not chunk_text:
-        return []
-
-    starts = []
-    start = 0
-    while True:
-        position = query.find(chunk_text, start)
-        if position == -1:
-            break
-        starts.append(position)
-        start = position + 1
-
-    return [(start_pos, start_pos + len(chunk_text)) for start_pos in starts]
-
-
-def assign_predicted_spans(query, chunks, gold_rows):
-    """Map Gemini chunk text to character offsets in the original query.
-
-    If text repeats, prefer an unused occurrence that matches a reviewed gold
-    span and label. Otherwise choose the first unused occurrence.
-    """
-    gold_text_label = set()
-    for row in gold_rows:
-        start = int(row["start_char"])
-        end = int(row["end_char"])
-        label = str(row["chunk_label"])
-        gold_text_label.add((query[start:end], label, start, end))
-
-    used_spans = set()
-    predictions = []
-
-    for chunk in chunks:
-        text = str(chunk.get("text", "")).strip()
-        label = str(chunk.get("label", "")).strip()
-        occurrences = find_span_occurrences(query, text)
-
-        if not occurrences:
-            predictions.append({
-                "chunk_text": text,
-                "chunk_label": label,
-                "start_char": None,
-                "end_char": None,
-                "span_found": False,
-            })
-            continue
-
-        matching_gold = [
-            (start, end)
-            for start, end in occurrences
-            if (text, label, start, end) in gold_text_label
-            and (start, end, label) not in used_spans
-        ]
-        available = [
-            (start, end)
-            for start, end in occurrences
-            if (start, end, label) not in used_spans
-        ]
-
-        if matching_gold:
-            start, end = matching_gold[0]
-        elif available:
-            start, end = available[0]
-        else:
-            # A repeated prediction can map to the same span if all occurrences
-            # have already been used; it will be deduplicated in set-based metrics.
-            start, end = occurrences[0]
-
-        used_spans.add((start, end, label))
-        predictions.append({
-            "chunk_text": text,
-            "chunk_label": label,
-            "start_char": start,
-            "end_char": end,
-            "span_found": True,
-        })
-
-    return predictions
-
-
-def calculate_span_metrics(gold_df, pred_df):
-    """Calculate exact-span metrics by query ID, offsets, and chunk label."""
-    gold_set = set()
-    pred_set = set()
-
-    for row in gold_df.to_dict("records"):
-        gold_set.add((
-            str(row["query_id"]),
-            int(row["start_char"]),
-            int(row["end_char"]),
-            str(row["chunk_label"]),
-        ))
-
-    for row in pred_df.to_dict("records"):
-        start = row.get("start_char")
-        end = row.get("end_char")
-        if pd.isna(start) or pd.isna(end):
-            continue
-        pred_set.add((
-            str(row["query_id"]),
-            int(start),
-            int(end),
-            str(row["chunk_label"]),
-        ))
-
-    true_positive = len(gold_set & pred_set)
-    false_positive = len(pred_set - gold_set)
-    false_negative = len(gold_set - pred_set)
-
-    precision = (
-        true_positive / (true_positive + false_positive)
-        if true_positive + false_positive else 0.0
-    )
-    recall = (
-        true_positive / (true_positive + false_negative)
-        if true_positive + false_negative else 0.0
-    )
-    f1 = (
-        2 * precision * recall / (precision + recall)
-        if precision + recall else 0.0
-    )
-
-    return {
-        "gold_spans": len(gold_set),
-        "predicted_spans": len(pred_set),
-        "true_positive": true_positive,
-        "false_positive": false_positive,
-        "false_negative": false_negative,
-        "precision": precision,
-        "recall": recall,
-        "f1": f1,
-    }
 
 
 def main():
     parser = argparse.ArgumentParser(
         description="Run Gemini query understanding against reviewed chunk annotations."
+    )
+    parser.add_argument(
+        "--output-dir", type=Path, required=True,
+        help="New experiment directory; historical runs are not overwritten.",
     )
     parser.add_argument(
         "--limit",
@@ -261,7 +137,11 @@ def main():
     if args.limit < 0:
         parser.error("--limit must be 0 or a positive integer.")
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    global OUTPUT_DIR
+    OUTPUT_DIR = args.output_dir.resolve()
+    if OUTPUT_DIR.exists():
+        parser.error("Choose a new --output-dir to preserve previous experiments.")
+    OUTPUT_DIR.mkdir(parents=True)
 
     if not QUERY_FILE.exists():
         raise FileNotFoundError(f"Query file not found: {QUERY_FILE}")
@@ -324,9 +204,7 @@ def main():
             result = analyze_query_with_retry(query)
             elapsed = time.perf_counter() - start_time
             chunks = result.get("chunks", []) or []
-            predicted_spans = assign_predicted_spans(
-                query, chunks, query_gold.to_dict("records")
-            )
+            predicted_spans = assign_predicted_spans(query, chunks)
 
             query_results.append({
                 "query_id": query_id,
@@ -392,13 +270,14 @@ def main():
     successful_ids = set(
         query_df.loc[query_df["status"].eq("success"), "query_id"].astype(str)
     )
-    evaluated_gold = gold[gold["query_id"].isin(successful_ids)].copy()
-    evaluated_predictions = chunk_df[chunk_df["query_id"].astype(str).isin(successful_ids)].copy()
+    evaluated_gold = gold.copy()
+    evaluated_predictions = chunk_df.copy()
 
     metrics = calculate_span_metrics(evaluated_gold, evaluated_predictions)
     metrics["successful_queries"] = len(successful_ids)
     metrics["failed_queries"] = len(error_results)
-    metrics["queries_evaluated_for_metrics"] = len(successful_ids)
+    metrics["queries_evaluated_for_metrics"] = len(queries)
+    metrics["query_success_rate"] = len(successful_ids) / len(queries)
 
     per_label = {}
     labels = sorted(
@@ -417,16 +296,16 @@ def main():
         json.dump(metrics, file, indent=2, ensure_ascii=False)
 
     summary = {
-        "model": os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
+        "model": os.getenv("GEMINI_MODEL", ""),
         "requested_limit": args.limit,
         "queries_attempted": len(query_df),
         "queries_succeeded": len(successful_ids),
         "queries_failed": len(error_results),
         "total_elapsed_seconds": round(time.perf_counter() - total_start, 3),
-        "prediction_file": str(query_path.relative_to(ROOT)),
-        "chunk_file": str(chunk_path.relative_to(ROOT)),
-        "errors_file": str(errors_path.relative_to(ROOT)),
-        "metrics_file": str(metrics_path.relative_to(ROOT)),
+        "prediction_file": str(query_path),
+        "chunk_file": str(chunk_path),
+        "errors_file": str(errors_path),
+        "metrics_file": str(metrics_path),
     }
 
     with open(summary_path, "w", encoding="utf-8") as file:

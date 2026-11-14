@@ -3,6 +3,15 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .env
+.env.*
+!.env.example
+.streamlit/secrets.toml
 data/raw/
 data/processed/
 models/
+!models/
+models/*
+!models/.gitkeep
+experiments/**/*.joblib
+experiments/**/model/
+data/human_reviews/

@@ -1,0 +1,272 @@
+{
+  "scope": "Development pilot audit, not independent held-out performance",
+  "queries": 150,
+  "reviewed_chunk_queries": 28,
+  "reviewed_chunk_spans": 60,
+  "invalid_gold": [],
+  "chunk_labels": {
+    "ATTRIBUTE": 15,
+    "CONTEXT": 6,
+    "PRODUCT": 32,
+    "CONSTRAINT": 6,
+    "PURPOSE": 1
+  },
+  "intent_labels": {
+    "CONTEXT_CONSTRAINT_SEARCH": 9,
+    "PRODUCT_SEARCH": 108,
+    "OCCASION_SEARCH": 6,
+    "USE_CASE_SEARCH": 9,
+    "ATTRIBUTE_SEARCH": 18
+  },
+  "intent_annotators": {
+    "assistant_pilot_v0.1": 150
+  },
+  "intent_review_status": {
+    "reviewed": 150
+  },
+  "intent_provenance_warning": "Assistant pilot labels require independent human verification, regardless of reviewed status.",
+  "input_sha256": {
+    "data\\annotations\\query_sample.csv": "48faf6e3e940d3d18d173084cd3d1e686274ff13f1100f000d2697c2a7b784d2",
+    "data\\annotations\\chunk_annotations_reviewed.csv": "79e086a47eb00daa249581c81aef06145b6590a2f390e8ff4d126ef1def3cb94",
+    "data\\annotation_outputs\\intent_annotations_annotated.csv": "12cd29c8bd1a97a38e5e74bdf4aaa9cfc16ca6ef86ec9e5ff434556ea8902e81"
+  },
+  "historical_rescoring": {
+    "rule_day2": {
+      "gold_spans": 60,
+      "predicted_spans": 53,
+      "invalid_predictions": 0,
+      "true_positive": 47,
+      "false_positive": 6,
+      "false_negative": 13,
+      "precision": 0.8867924528301887,
+      "recall": 0.7833333333333333,
+      "f1": 0.831858407079646,
+      "per_label": {
+        "PRODUCT": {
+          "gold_spans": 32,
+          "predicted_spans": 29,
+          "invalid_predictions": 0,
+          "true_positive": 24,
+          "false_positive": 5,
+          "false_negative": 8,
+          "precision": 0.8275862068965517,
+          "recall": 0.75,
+          "f1": 0.7868852459016393
+        },
+        "ATTRIBUTE": {
+          "gold_spans": 15,
+          "predicted_spans": 12,
+          "invalid_predictions": 0,
+          "true_positive": 12,
+          "false_positive": 0,
+          "false_negative": 3,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8888888888888888
+        },
+        "PURPOSE": {
+          "gold_spans": 1,
+          "predicted_spans": 1,
+          "invalid_predictions": 0,
+          "true_positive": 1,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "OCCASION": {
+          "gold_spans": 0,
+          "predicted_spans": 0,
+          "invalid_predictions": 0,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "CONTEXT": {
+          "gold_spans": 6,
+          "predicted_spans": 6,
+          "invalid_predictions": 0,
+          "true_positive": 5,
+          "false_positive": 1,
+          "false_negative": 1,
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334
+        },
+        "CONSTRAINT": {
+          "gold_spans": 6,
+          "predicted_spans": 5,
+          "invalid_predictions": 0,
+          "true_positive": 5,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        }
+      }
+    },
+    "gemini_day4": {
+      "gold_spans": 60,
+      "predicted_spans": 69,
+      "invalid_predictions": 0,
+      "true_positive": 32,
+      "false_positive": 37,
+      "false_negative": 28,
+      "precision": 0.463768115942029,
+      "recall": 0.5333333333333333,
+      "f1": 0.49612403100775193,
+      "per_label": {
+        "PRODUCT": {
+          "gold_spans": 32,
+          "predicted_spans": 27,
+          "invalid_predictions": 0,
+          "true_positive": 12,
+          "false_positive": 15,
+          "false_negative": 20,
+          "precision": 0.4444444444444444,
+          "recall": 0.375,
+          "f1": 0.4067796610169492
+        },
+        "ATTRIBUTE": {
+          "gold_spans": 15,
+          "predicted_spans": 27,
+          "invalid_predictions": 0,
+          "true_positive": 10,
+          "false_positive": 17,
+          "false_negative": 5,
+          "precision": 0.37037037037037035,
+          "recall": 0.6666666666666666,
+          "f1": 0.47619047619047616
+        },
+        "PURPOSE": {
+          "gold_spans": 1,
+          "predicted_spans": 4,
+          "invalid_predictions": 0,
+          "true_positive": 1,
+          "false_positive": 3,
+          "false_negative": 0,
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4
+        },
+        "OCCASION": {
+          "gold_spans": 0,
+          "predicted_spans": 0,
+          "invalid_predictions": 0,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "CONTEXT": {
+          "gold_spans": 6,
+          "predicted_spans": 6,
+          "invalid_predictions": 0,
+          "true_positive": 4,
+          "false_positive": 2,
+          "false_negative": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666
+        },
+        "CONSTRAINT": {
+          "gold_spans": 6,
+          "predicted_spans": 5,
+          "invalid_predictions": 0,
+          "true_positive": 5,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        }
+      }
+    },
+    "gemini_day5": {
+      "gold_spans": 60,
+      "predicted_spans": 64,
+      "invalid_predictions": 0,
+      "true_positive": 28,
+      "false_positive": 36,
+      "false_negative": 32,
+      "precision": 0.4375,
+      "recall": 0.4666666666666667,
+      "f1": 0.45161290322580644,
+      "per_label": {
+        "PRODUCT": {
+          "gold_spans": 32,
+          "predicted_spans": 28,
+          "invalid_predictions": 0,
+          "true_positive": 12,
+          "false_positive": 16,
+          "false_negative": 20,
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "f1": 0.4
+        },
+        "ATTRIBUTE": {
+          "gold_spans": 15,
+          "predicted_spans": 25,
+          "invalid_predictions": 0,
+          "true_positive": 9,
+          "false_positive": 16,
+          "false_negative": 6,
+          "precision": 0.36,
+          "recall": 0.6,
+          "f1": 0.45
+        },
+        "PURPOSE": {
+          "gold_spans": 1,
+          "predicted_spans": 2,
+          "invalid_predictions": 0,
+          "true_positive": 0,
+          "false_positive": 2,
+          "false_negative": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "OCCASION": {
+          "gold_spans": 0,
+          "predicted_spans": 0,
+          "invalid_predictions": 0,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "CONTEXT": {
+          "gold_spans": 6,
+          "predicted_spans": 4,
+          "invalid_predictions": 0,
+          "true_positive": 2,
+          "false_positive": 2,
+          "false_negative": 4,
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4
+        },
+        "CONSTRAINT": {
+          "gold_spans": 6,
+          "predicted_spans": 5,
+          "invalid_predictions": 0,
+          "true_positive": 5,
+          "false_positive": 0,
+          "false_negative": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        }
+      }
+    }
+  }
+}
